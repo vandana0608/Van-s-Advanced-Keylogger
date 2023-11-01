@@ -1,0 +1,39 @@
+W1
+1. Research and project proposal completion for "Advanced Keylogger"
+
+W2
+1. Python Programming Review
+2. Python environment installation on my laptop
+3. Started using web resources to refresh my memory of Python's file handling constructs.
+
+W3
+1. Hands-on examples on file handling in Python
+2. Reading, Writing, Appending content in an exisiting / new file using Python
+3. Complex File Handling operations conducted to get thorough understanding
+4. Started research on the basic concepts / working of a key logger, its different types and usages
+
+W4
+1. Setting up & enabling security settings on my Mac Environment for development
+2. Understanding of different python libraries needed to enable screenshotting the page, accessing key strokes
+3. Downloading these libraries and incorparating it into Python Code
+4. Need to make a video of myself for the Week 5 video presentation of the progress so far
+
+W5
+1. Implementation of Key Logger
+
+W7
+1. Deployment & Debugging of Key Logger
+
+W8
+1. Work & Complete Final Report
+
+Project Deliverables
+1. Send Keylogs via EMAIL : Instead of EMAIL, sent to a remote server and try to get it as a SMS instead?
+2. Record victim's microphone : Done
+3. Understanding a victim's system : Done
+4. Capture a Screenshot of a victim's device : Done
+5. Acquire complete computer information of a victim : Done
+6. Build a customised Advance KeyLogger : With SS, keystrokes, data sent to remote server, audio?
+7. Usage of Python & its respective libraries to implement KeyLogger : Done
+8. Capture & save keystrokes in a file : Done
+9. Eliminate extra key codes and single quotes : Done
